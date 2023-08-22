@@ -22,4 +22,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index ),
     path('posts/<int:id>/',views.detail),
+    #create
+    path('posts/new/',views.new),
+    path('posts/create/',views.create),
+
+    #Delete
+    path('posts/<int:id>/delete/',views.delete),
+
+
 ]

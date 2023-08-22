@@ -93,5 +93,24 @@ def index(request):
     return render(request, 'index.html', context)
 ```
 ### 2. Create
+-사용자에게 입력할 수 있는 폼을 제공
+```python
+def detail(request,id):
+    post= Post.objects.get(id=id)
+    context={
+
+        'post':post
+    }
+
+    return render(request, 'detail.html',context)
+
+def new(request):
+    return render(request, 'new.html')
+
+def create(request):
+    title=request.GET.get('title')
+    content= request.GET.get('content')
+```
 ### 3. Delete
+
 ### 4. Update
