@@ -21,3 +21,8 @@ source venv/Scripts?activate
 ```bash
 pip install django
 ```
+
+7. 서버 실행 확인
+```bash 
+python manage.py runserver
+```
